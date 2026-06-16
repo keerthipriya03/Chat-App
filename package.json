@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node Backend/index.js",
     "server": "nodemon Backend/index.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "build": "npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
   "license": "ISC",
