@@ -15,9 +15,12 @@ connectDB();
 const app = express();
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("API is running!");
-});
+// app.get("/", (req, res) => {
+//   res.send("API is running!");
+// });
+
+
+console.log("NODE_ENV =", process.env.NODE_ENV);
 
 app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
